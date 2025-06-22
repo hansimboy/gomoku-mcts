@@ -4,8 +4,7 @@ from gomoku.utils import draw_go_board
 from gomoku.board import GomokuBoard, CellState, GameResult
 from gomoku.players.base import GamePlayerInterface
 
-# from gomoku.players.mcts_player import MCTSAlgorithm
-from gomoku.players import mcts_2023150428
+from gomoku.players.mcts_player import MCTSAlgorithm
 
 def play_game(board: GomokuBoard, player1: GamePlayerInterface, player2: GamePlayerInterface, drawing_board: bool = True):
     player1.new_game(CellState.CROSS)
@@ -50,7 +49,7 @@ def battle(player1: GamePlayerInterface, player2: GamePlayerInterface, num_games
     return cross_count, naught_count, draw_count
 
 if __name__ == "__main__":
-    player1 = mcts_2023150428.MCTSAlgorithm()
+    player1 = MCTSAlgorithm()
     player2 = RandomPlayer()
-    # play_game(GomokuBoard(), player1, player2, drawing_board=True)
-    battle(player1, player2, num_games=40) # about 3 miniutes time-consuming when iteration=400
+    play_game(GomokuBoard(), player1, player2, drawing_board=True)
+    # battle(player1, player2, num_games=40) # about 3 miniutes time-consuming when iteration=400
