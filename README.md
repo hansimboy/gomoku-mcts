@@ -1,6 +1,7 @@
 # Playing Gomoku using MCTSAlgorithm
 
-This project implements an AI agent that plays the game of Gomoku using the Monte Carlo Tree Search (MCTS) algorithm.  
+This project implements an AI agent that plays the game of Gomoku using the Monte Carlo Tree Search (MCTS) algorithm,  
+which is a type of reinforcement learning technique.
 
 Against a random player, the MCTS agent achieves over **95% win rate as the first player**,  
 and over **85% win rate as the second player**
@@ -14,7 +15,7 @@ These settings can be customized by modifying the following constants in `consta
 - `NUM_WIN`: Number of stones in a row needed to win (e.g., 3 for "three in a row")
 ---
 
-이 프로젝트는 MCTS 알고리즘을 사용하여 오목(Gomoku)을 플레이하는 AI 에이전트를 구현합니다.
+이 프로젝트는 강화학습의 한 종류인 MCTS 알고리즘을 사용하여 오목(Gomoku)을 플레이하는 AI 에이전트를 구현합니다.
 
 random player와 게임할 때, 선공일 경우 **95%이상의 승률**, 후공일 경우 **85%이상의 승률**을 보여줍니다.
 
