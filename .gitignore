@@ -1,1 +1,4 @@
-gomoku\players\mcts_2023150428.py
+gomoku/players/mcts_2023150428.py
+
+__pycache__/
+*.pyc
